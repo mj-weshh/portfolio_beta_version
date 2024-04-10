@@ -1,0 +1,254 @@
+body{
+     background-color: #000000;
+     color: #b6042a;
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+}
+nav{
+     padding: 10px;
+     margin: 0;
+     background-color: #b6042a;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     color: black;
+     position: fixed;
+     z-index: 1000;
+     width: 100%;
+     top: 0;
+     left: 0;
+}
+.icon{
+     height: 50px;
+     width: 50px;
+     justify-content: center;
+}
+.nav-bar{
+     justify-content: center;
+}
+.nav-bar ul{
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+.nav-bar ul li{
+     padding-right: 30px;
+}
+.nav-bar ul li a{
+     text-decoration: none;
+     color: black;
+}
+.nav-bar ul li a:active{
+     background-color: black;
+     color: #b6042a;
+     border-radius: 6px;
+}
+.nav-bar ul li a:hover{
+     background-color: black;
+     color: #b6042a;
+     border-radius: 6px;
+     padding: 5px;
+}
+.container{
+     justify-content: baseline;
+     text-align: center;
+}
+.home{
+     margin: 25px auto;
+     height: 500px;
+}
+.me{
+     border-radius: 30%;
+}
+.intro{
+     padding-top: 170px;
+}
+#homeshow{
+     color: #b6042a;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     padding: 80px;
+}
+#aboutme{
+     background-color: #FFFAFA;
+     color: #b6042a;
+     padding: 80px;
+     text-align: center;
+     justify-content: center;
+}
+#aboutme h2{
+     padding: 50px;
+}
+#aboutme p{
+     margin: 0 auto;
+     max-width: 700px;
+}
+.aboutme{
+     padding: 20px;
+}
+.mission{
+     padding-top: 20px;
+     padding-bottom: 0;
+}
+#skills{
+     text-align: left;
+     padding: 80px;
+}
+.skillsstructure{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+}
+#skills h2{
+     text-align: center;
+}
+#skillslist{
+     padding-left: 0;
+}
+#skills p{
+     padding-left: 20px;
+}
+.skillsimg img{
+     height: 300px;
+     width: 400px;
+     padding: 20px;
+     border-radius: 30%;
+}
+#projects{
+     padding: 80px;
+     background-color: #FFFAFA;
+     color: #b6042a;
+}
+#projcts h2{
+     text-align: center;
+}
+#contact{
+     padding: 80px;
+}
+#contact p{
+     padding: 50px;
+}
+#contact a{
+     text-decoration: none;
+     color: #b6042a;
+     padding-bottom: 20px;
+}
+#contact ul{
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     text-align: center;
+     padding: 25px;
+}
+#contact ul li i{
+     color: #b6042a;
+}
+footer{
+     text-align: center;
+     color: #b6042a;
+     background-color: #FFFAFA;
+     padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+     body {
+       font-size: 14px;
+       margin: 0 auto;
+       align-items: center;
+     }
+     nav{
+          justify-content: space-evenly;
+     }
+     #navbar {
+       padding: 5px;
+     }
+     .nav-bar ul li {
+       padding-right: 15px;
+     }
+     .icon {
+       height: 40px;
+       width: 40px;
+     }
+     #homeshow{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+     }
+     .home {
+       margin: 15px auto;
+       height: 600px;
+       width: 100%;
+     }
+     .me {
+       width: 80%;
+     }
+     .intro {
+       padding-top: 100px;
+     }
+     #aboutme{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          padding-top: 5px;
+          width: 100%;
+          margin: 0 auto;
+     }
+     #aboutme h2 {
+       padding: 20px 0;
+     }
+     #aboutme p {
+       padding: 0 10px;
+     }
+     .mission {
+       padding-top: 10px;
+     }
+     #skills {
+       padding: 50px 10px;
+       width: 100%;
+     }
+     .skillsstructure {
+       flex-direction: column;
+       align-items: center;
+     }
+     .skillslist, .skillsimg {
+       padding: 10px;
+       text-align: center;
+     }
+     .skillsimg img {
+       height: auto;
+       width: 100%;
+       border-radius: 20%;
+     }
+     #projcts{
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          margin: 0 auto;
+     }
+     #projcts h2{
+          text-align: center;
+     }
+     #contact {
+       padding: 50px 10px;
+       width: 100%;
+       margin: 0 auto;
+     }
+     #contact p {
+       padding: 20px 10px;
+     }
+     #contactDetail ul {
+       flex-direction: column;
+       align-items: center;
+     }
+     #contactDetail ul li {
+       margin-bottom: 10px;
+     }
+     footer {
+       padding: 5px;
+       width: 100%;
+       margin: 0 auto;
+     }
+   }
